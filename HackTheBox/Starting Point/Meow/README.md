@@ -36,7 +36,9 @@ nmap <IP>
 ```
 ![Nmap Scan](images/nmap_scan_result.png)
 
-And I found one open port which will be our targeted one for this machine.
+### Analysis
+
+The scan shows that only port 23 (Telnet) is open, which becomes the main attack vector.
 
 ## Exploitation
 Let's try to connect to the machine via this protocol:
@@ -46,10 +48,19 @@ telnet <IP>
 and let's try root as our user here
 ![Telnet Connection](images/telnet_connection.png)
 
-BOOM, I'AM INSIDE AS ROOT!!
+### Analysis
+
+The system allows login as root without a password, indicating a critical misconfiguration.
+
+✔️ Successfully gained root access.
 LASTLY LET'S GET OUR FLAG
 
 ![Root Flag](images/final_pic.png)
+
+## ⚠️ Security Insight
+
+Allowing root login over Telnet without authentication is a severe security flaw that can lead to full system compromise.
+
 
 try it yourself.
 
