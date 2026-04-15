@@ -9,7 +9,7 @@ This section contains machines I have completed, with detailed explanations of m
 
 ### 🟢 Starting Point
 
-- [Meow](./Meow)
+- [Meow](./Starting%20Point/Meow)
 
 ---
 
